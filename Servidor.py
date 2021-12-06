@@ -34,7 +34,7 @@ class ServidorArduinos(Thread):
 
 
 @app.route('/<message>')
-def sonido(message):
+def mensaje(message):
     print(f'Mensaje enviado al Arduino: {message}')
     servidor.enviarMensaje(message)
     return 'Ok'
